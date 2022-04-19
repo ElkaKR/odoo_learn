@@ -1,0 +1,322 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* academy
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-18 09:20+0000\n"
+"PO-Revision-Date: 2022-04-18 09:20+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__active
+msgid "Active"
+msgstr ""
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.creat_attendes_wizard_form
+msgid "Add attendees"
+msgstr "Дoдати слухача"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__attendee_idw
+msgid "Attendee Idw"
+msgstr "Слухач"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__attendee_id
+#: model_terms:ir.ui.view,arch_db:academy.creat_attendes_wizard_form
+msgid "Attendees"
+msgstr "Слухачi"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_form
+msgid "Attendes"
+msgstr "Слухачi"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__attendes_count
+msgid "Attendes Count"
+msgstr "Кiлькiсть слухачiв"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_graph
+msgid "Attendes_graph"
+msgstr "Слухачi"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.creat_attendes_wizard_form
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: academy
+#: model:ir.model,name:academy.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__course
+msgid "Course"
+msgstr "Курс"
+
+#. module: academy
+#: model:ir.actions.act_window,name:academy.action_open_courses
+#: model:ir.ui.menu,name:academy.menu_courses_list
+msgid "Courses"
+msgstr "Курси"
+
+#. module: academy
+#: model:ir.ui.menu,name:academy.menu_courses_master
+msgid "Courses detailes"
+msgstr "Детальнo"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.course_view_list
+msgid "Courses list"
+msgstr "Перелiк курсiв"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.course_view_search
+msgid "Courses search"
+msgstr "Пошук курсів"
+
+#. module: academy
+#: model:ir.model,name:academy.model_creat_attendes_wizard
+msgid "Creat attendes wizard"
+msgstr "Створити дiалог створення слухачів"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.creat_attendes_wizard_form
+msgid "Creat session's attendee"
+msgstr "Створити слухача сесії"
+
+#. module: academy
+#: model:ir.actions.act_window,name:academy.creat_attendes_wizard_action
+msgid "Create attendee for selected Session"
+msgstr "Створити слухача вираної сесії"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__create_uid
+#: model:ir.model.fields,field_description:academy.field_academy_session__create_uid
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__create_uid
+msgid "Created by"
+msgstr "Створено"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__create_date
+#: model:ir.model.fields,field_description:academy.field_academy_session__create_date
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__create_date
+msgid "Created on"
+msgstr "Створено на"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_form
+msgid "Data of session"
+msgstr "Дата сесії"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__description
+#: model_terms:ir.ui.view,arch_db:academy.course_view_form
+msgid "Description"
+msgstr "Опис"
+
+#. module: academy
+#: model:ir.model,name:academy.model_academy_course
+msgid "Description courses"
+msgstr "Опис курсів"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.course_view_form
+msgid "Details"
+msgstr "Детально"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__display_name
+#: model:ir.model.fields,field_description:academy.field_academy_session__display_name
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__display_name
+msgid "Display Name"
+msgstr "Назва для відображення"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__duration
+msgid "Duration"
+msgstr "Тривалість"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__end_date
+msgid "End Date"
+msgstr "Дата закінчення"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.course_view_search
+msgid "Group By"
+msgstr "Групувати за"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__id
+#: model:ir.model.fields,field_description:academy.field_academy_session__id
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__id
+msgid "ID"
+msgstr "№ з/п"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_res_partner__instructor
+#: model:ir.model.fields,field_description:academy.field_res_users__instructor
+msgid "Instructor"
+msgstr "Інструктор"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course____last_update
+#: model:ir.model.fields,field_description:academy.field_academy_session____last_update
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard____last_update
+msgid "Last Modified on"
+msgstr "Останні зміни"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__write_uid
+#: model:ir.model.fields,field_description:academy.field_academy_session__write_uid
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__write_date
+#: model:ir.model.fields,field_description:academy.field_academy_session__write_date
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення на"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.course_view_search
+msgid "Name and description"
+msgstr "Назва та опис"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__number_of_seats
+msgid "Number of seat"
+msgstr "Номер місця"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__percent_taken_seats
+msgid "Percent Taken Seats"
+msgstr "Процент зайнятих місць"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.course_view_search
+msgid "Responsible"
+msgstr "Відповідальний"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.course_view_form
+msgid "Responsible user"
+msgstr "Відповідальний"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__session_id
+#: model:ir.model.fields,field_description:academy.field_creat_attendes_wizard__session_idw
+#: model:ir.model.fields,field_description:academy.field_res_partner__session
+#: model:ir.model.fields,field_description:academy.field_res_users__session
+msgid "Session"
+msgstr "Сесія"
+
+#. module: academy
+#: model:ir.model,name:academy.model_academy_session
+msgid "Session of courses"
+msgstr "Сесії курсів"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_canban
+msgid "Session:"
+msgstr "Сесія"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_calendar
+msgid "Session_calendar"
+msgstr "Календар сесій"
+
+#. module: academy
+#: model:ir.actions.act_window,name:academy.action_open_sessions
+#: model:ir.ui.menu,name:academy.menu_sessions_master
+#: model_terms:ir.ui.view,arch_db:academy.course_view_form
+#: model_terms:ir.ui.view,arch_db:academy.creat_attendes_wizard_form
+msgid "Sessions"
+msgstr "Сесії"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_list
+msgid "Sessions list"
+msgstr "Перелік сесій"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_search
+msgid "Sessions search"
+msgstr "Пошук сесій"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__start_date
+msgid "Start date"
+msgstr "Дата початку"
+
+#. module: academy
+#: model_terms:ir.ui.view,arch_db:academy.session_view_search
+msgid "Starts date"
+msgstr "Дата початку"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_res_partner__teacher
+#: model:ir.model.fields,field_description:academy.field_res_users__teacher
+msgid "Teacher"
+msgstr "Вчитель"
+
+#. module: academy
+#: model:ir.model.constraint,message:academy.constraint_academy_course_name_descr
+msgid "The name of the course matches description!"
+msgstr "Назва курсу співпадає з описом курсу"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__name
+#: model:ir.model.fields,field_description:academy.field_academy_session__name
+msgid "Title"
+msgstr "Назва"
+
+#. module: academy
+#: model:ir.model.constraint,message:academy.constraint_academy_course_name_mustbe_uniq
+msgid "You already have course with such name!"
+msgstr "Курс з такою назвою вже існує"
+
+#. module: academy
+#: model:res.groups,name:academy.academy_manager
+msgid "academy manager"
+msgstr "менеджер"
+
+#. module: academy
+#: model:res.groups,name:academy.academy_session_read
+msgid "academy session read"
+msgstr "Сесії тільки читання"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_session__instructor_id
+msgid "instructor"
+msgstr "Інструктор"
+
+#. module: academy
+#: model:ir.model.fields,field_description:academy.field_academy_course__respons_user_id
+msgid "responsible"
+msgstr "Відповідальний"
+
+#. module: academy
+#: model:ir.model.fields.selection,name:academy.selection__res_partner__teacher__teacher_level1
+msgid "teacher level 1"
+msgstr "вчитель рівня 1"
+
+#. module: academy
+#: model:ir.model.fields.selection,name:academy.selection__res_partner__teacher__teacher_level2
+msgid "teacher level 2"
+msgstr "вчитель рівня 2"

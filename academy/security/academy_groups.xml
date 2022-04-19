@@ -1,0 +1,9 @@
+<odoo>
+    <record id="academy_session_read" model="res.groups">
+        <field name="name">academy session read</field>
+    </record>
+
+    <record id="academy_manager" model="res.groups">
+        <field name="name">academy manager</field>
+    </record>
+</odoo>

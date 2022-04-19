@@ -1,0 +1,40 @@
+<odoo>
+    <record id="action_session_report" model="ir.actions.report">
+        <field name="name">Session report</field>
+        <field name="model">academy.session</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">academy.action_session_report</field>
+        <field name="report_file">academy.session_report</field>
+        <field name="binding_model_id" ref="model_academy_session"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="academy.action_session_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Session
+                            <t t-esc="doc.name"/>
+                        </h2>
+                        <p>Start date
+                            <t t-esc="doc.start_date"/>
+                        </p>
+                        <p>End date
+                            <t t-esc="doc.end_date"/>
+                        </p>
+
+                        <h3>Attendees:</h3>
+                        <ul>
+                            <t t-foreach="doc.attendee_id" t-as="attendee">
+                                <li>
+                                    <span t-field="attendee.name"/>
+                                </li>
+                            </t>
+                        </ul>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

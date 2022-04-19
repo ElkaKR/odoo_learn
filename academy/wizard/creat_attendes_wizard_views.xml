@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="creat_attendes_wizard_form" model="ir.ui.view">
+            <field name="name">creat.attendes.wizard.form</field>
+            <field name="model">creat.attendes.wizard</field>
+            <field name="arch" type="xml">
+                <form string="Creat session's attendee">
+                    <group>
+                        <field name="session_idw" string="Sessions"/>
+                        <field name="attendee_idw" string="Attendees"/>
+                    </group>
+                    <footer>
+                        <button type="object" name="add_attendees_to_sessions" class="btn btn-primary"
+                                string="Add attendees" data-hotkey="q"/>
+                        <button string="Cancel" special="cancel" data-hotkey="z"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+
+        <record id="creat_attendes_wizard_action" model="ir.actions.act_window">
+            <field name="name">Create attendee for selected Session</field>
+            <field name="res_model">creat.attendes.wizard</field>
+            <field name="view_mode">form</field>
+            <field name="view_id" ref="creat_attendes_wizard_form"/>
+            <field name="target">new</field>
+            <field name="binding_model_id" ref="model_academy_session"/>
+        </record>
+    </data>
+</odoo>

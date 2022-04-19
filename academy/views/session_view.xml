@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="session_view_form" model="ir.ui.view">
+        <field name="model">academy.session</field>
+        <field name="name">academy.session.form</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <notebook>
+                        <page string="Data of session">
+                            <group>
+                                <field name="course"/>
+                                <field name="start_date"/>
+                                <field name="active"/>
+                                <field name="duration"/>
+                                <field name="number_of_seats"/>
+                                <field name="percent_taken_seats" widget="progressbar"/>
+                                <field name="instructor_id"/>
+                            </group>
+                        </page>
+                        <page string="Attendes">
+                            <field name="attendee_id"/>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="session_view_calendar" model="ir.ui.view">
+        <field name="model">academy.session</field>
+        <field name="name">academy.session.calendar</field>
+        <field name="arch" type="xml">
+            <calendar string="Session_calendar" date_start="start_date" date_stop="end_date" color='course'>
+                <field name="name"/>
+                <field name="course"/>
+                <field name="start_date"/>
+                <field name="instructor_id"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record id="session_view_graph" model="ir.ui.view">
+        <field name="model">academy.session</field>
+        <field name="name">academy.session.graph</field>
+        <field name="arch" type="xml">
+            <graph string="Attendes_graph">
+                <field name="course"/>
+                <field name="attendes_count" type='pie'/>
+            </graph>
+        </field>
+    </record>
+
+    <record id="session_view_canban" model="ir.ui.view">
+        <field name="model">academy.session</field>
+        <field name="name">academy.session.kanban</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="course" sample="1">
+                <field name="course"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe_kanban_global_click">
+                            <div class="oe_kanban_details">
+                                <ul>
+                                    <li>
+                                        Session:
+                                        <field name="name"/>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="session_view_list" model="ir.ui.view">
+        <field name="model">academy.session</field>
+        <field name="name">academy.session.tree</field>
+        <field name="arch" type="xml">
+            <tree string="Sessions list" decoration-info="duration&lt;5" decoration-danger="duration&gt;15">
+                <field name="name"/>
+                <field name="start_date"/>
+                <field name="active"/>
+                <field name="duration"/>
+                <field name="number_of_seats"/>
+                <field name="percent_taken_seats" widget="progressbar"/>
+                <field name="instructor_id"/>
+                <field name="course"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="session_view_search" model="ir.ui.view">
+        <field name="model">academy.session</field>
+        <field name="name">academy.session.search</field>
+        <field name="arch" type="xml">
+            <search string="Sessions search">
+                <field name="name"/>
+                <field name="start_date" string="Starts date"/>
+                <!--                             filter_domain="['|', ('name', 'ilike', self), ('description', 'ilike', self)]"/>-->
+            </search>
+        </field>
+    </record>
+
+    <record id="academy_act_session_graph" model="ir.actions.act_window">
+            <field name="name">Sessions</field>
+            <field name="res_model">academy.session</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">graph</field>
+            <field name="view_id" ref="session_view_graph"/>
+    </record>
+
+    <record id="academy_act_session_calendar" model="ir.actions.act_window">
+            <field name="name">Sessions</field>
+            <field name="res_model">academy.session</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">calendar</field>
+            <field name="view_id" ref="session_view_calendar"/>
+    </record>
+
+
+</odoo>

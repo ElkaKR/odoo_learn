@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="action_open_courses" model="ir.actions.act_window">
+            <field name="name">Courses</field>
+            <field name="res_model">academy.course</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form</field>
+            <field name="context">{}</field>
+    </record>
+
+    <record id="action_open_sessions" model="ir.actions.act_window">
+            <field name="name">Sessions</field>
+            <field name="res_model">academy.session</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="view_mode">tree,form,calendar,graph,kanban</field>
+            <field name="context">{}</field>
+    </record>
+
+    <menuitem id="menu_courses_list"
+              name="Courses"
+              action="action_open_courses"
+              sequence="0"/>
+
+    <menuitem id="menu_courses_master"
+              name="Courses detailes"
+              parent="menu_courses_list"
+              action="action_open_courses"/>
+
+    <menuitem id="menu_sessions_master"
+              name="Sessions"
+              parent="menu_courses_master"
+              action="action_open_sessions"/>
+
+</odoo>
+

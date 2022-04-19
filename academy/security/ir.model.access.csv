@@ -1,0 +1,9 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access.academy.course,access_academy_course,academy.model_academy_course,base.group_user,1,1,1,1
+access.academy.session,access_academy_session,academy.model_academy_session,base.group_user,1,1,1,1
+access.academy.session.read,access_academy_session_read,academy.model_academy_session,academy.academy_session_read,1,0,0,0
+access.academy.course.manager,access_academy_course_manager,academy.model_academy_course,academy.academy_manager,1,1,1,1
+access.academy.session.manager,access_academy_session_manager,academy.model_academy_session,academy.academy_manager,1,1,1,1
+access.academy.course.allusers,access_academy_course_allusers,academy.model_academy_course,,1,0,0,0
+access.academy.session.allusers,access_academy_session_allusers,academy.model_academy_session,,1,0,0,0
+access.creat.attendes.wizard,creat_attendes_wizard,model_creat_attendes_wizard,,1,1,1,1
